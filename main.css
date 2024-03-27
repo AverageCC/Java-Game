@@ -1,0 +1,18 @@
+body {
+    background-color: aqua;
+    display: flex; /* makes the body a flex container */
+    color: black;
+    justify-content: center; /* centers the button horizontally */
+    align-items: center;
+    height: 100vh; /* ensures that the body takes up the full height */
+    margin: 0; /* removes the default margin */
+}
+
+button {
+    background-color: #4CAF50; /* Sets the button color to green */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
