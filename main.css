@@ -5,7 +5,7 @@ body {
     justify-content: center; /* centers the button horizontally */
     align-items: center;
     height: 100vh; /* ensures that the body takes up the full height */
-    margin: 0; /* removes the default margin */
+    margin: 0; /* removes the default margin  */
 }
 
 button {
