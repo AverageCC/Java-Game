@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- This initializes our game.html web page -->
 <html lang="en">
 <head>
-    <title>Game</title> <!-- Title of the page -->
-    <link rel="stylesheet" href="main.css"> <!-- Links to the main.css file to format the page -->
+    <title>Game</title> <!-- This sets the title of the web page to "Game" -->
+    <link rel="stylesheet" href="main.css"> <!-- This links the main.css file to the web page -->
 </head>
 <body>
-    <button id="PlayButton" onclick="playGame()">Play Game</button> <!-- Gives our button a unique ID "PlayButton" then uses onclick="playGame()" in order to play rock, paper, scissors" -->
-    <script src="code.js"></script> <!-- Links to the code.js file so the HTML file can call for the playGame(); function in our code.js file -->
+    <h1>Rock, Paper, Scissors Web Game</h1> <!-- This tells the user "Rock, Paper, Scissors Web Game" is what they're about to play  -->
+    <p id="subtitle">Click below to play!</p> <!-- This tells the user to click below to play the game -->
+    <button id="PlayButton" class="game-button" onclick="playGame()">Play Game</button> <!-- This creates a button that the user can click to play the game. I had to create #game-button in main.css in order to separate my body from the button to play the game. The onclick= calls the playButton() function from the code.js file to execute. -->
+    <script src="code.js"></script> <!-- This links the code.js file to the web page otherwise the onclick="playGame()" wont execute -->
+</body>
 </html>
