@@ -1,21 +1,16 @@
 function playGame() {
-    var coices = ["rock", "paper", "scissors"];
-    var choice = prompt("Choose rock, paper, or scissors");
+    var choices = ['rock', 'paper', 'scissors'];
+    var computerChoice = choices[Math.floor(Math.random() * 3)];
 
-    if (choice === "rock" || choice === "paper" || choice === "scissors") {
-        var computerChoice = choices[Math.floor(Math.random() * 3)];
-        alert("The computer chose " + computerChoice);
+    var userChoice = prompt("Do you choose rock, paper or scissors?").toLowerCase();
 
-        if (choice === computerChoice) {
-            alert("The result is a tie!");
-        } else if (
-            (choice === "rock" && computerChoice === "scissors") ||
-            (choice === "paper" && computerChoice === "rock") ||
-            (choice === "scissors" && computerChoice === "paper")
-        ) {
-            alert("You win!");
-        } else {
-            alert("You lose!");
-        }
+    if(userChoice === computerChoice) {
+        alert("It's a tie!");
+    } else if(
+        (userChoice === 'rock' && computerChoice === 'scissors') || (userChoice === 'scissors' && computerChoice === 'paper') || (userChoice === 'paper' && computerChoice === 'rock')
+    ) {
+        alert("You win! " + userChoice + " beats " + computerChoice + ".");
+    } else {
+        alert("You lose! " + computerChoice + " beats " + userChoice + ".");
     }
 }
